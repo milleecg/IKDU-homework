@@ -22,6 +22,14 @@ public class MyNewVariableAndMethod : MonoBehaviour
         IncreaseAge(age, 5);
         Debug.LogFormat("My age is now {0}", age);
 
+        int yearsAtUniBachelor = 3;
+        int yearsAtUniMaster = 2;
+        age = 23;
+        Debug.LogFormat("My initial age is {0}", age);
+        IncreaseAge(age, yearsAtUniBachelor);
+        Debug.LogFormat("I finish my bachelor degree at age {0}", age);
+        IncreaseAge(age, yearsAtUniMaster);
+        Debug.LogFormat("I finish my master degree at age {0}", age);
 
         Debug.LogFormat("My initial values are: a={0}, b={1}", a, b);
         int c = a;
